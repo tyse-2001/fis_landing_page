@@ -1,5 +1,5 @@
 # fis_landing_page
-Repository for FastApi code
+Repository for landing page
 
 ## Tasks to be done:
 - Create a landing page, with a function to toggle between English and Vietnamese
