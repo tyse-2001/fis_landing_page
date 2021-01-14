@@ -7,17 +7,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <nav class="navbar navbar-fixed-top navbar-default"> <!-- requires at least 50 px padding of the body-->
     <div class="container-fluid">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav"> <!-- add jumping anchor link -->
             <li><button id="switch-lang">Switch Language</button></li>
-            <li><a><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
-            <li><a><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
-            <li><a><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
-            <li><a><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
-            <li><a><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
+            <li><a href="#section2"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
+            <li><a href="#section3"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
+            <li><a href="#section4"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
+            <li><a href="#section8"><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
+            <li><a href="#footer-id"><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
         </ul>
     </div>
 </nav>
@@ -42,8 +44,8 @@
     </div>
 
     <!-- section 2 -->
-    <div class="container-fluid">
-        <div class="col-md-6">
+    <div class="section container-fluid" id="section2">
+        <div class="col-md-8">
             <h1>
                 <span lang="vi">Làm sao biết được dữ liệu doanh nghiệp bạn đang an toàn?</span>
                 <span lang="en">How do you know if your business data is safe?</span>
@@ -53,9 +55,9 @@
                 có động cơ kinh tế và chính trị. Các loại mã độc hiện nay có thể vượt qua các hệ thống bảo vệ của  doanh nghiệp, 
                 chiếm quyền điều khiển máy tính người dùng và thực hiện tấn công leo thang. Trong bảo mật dữ liệu, Doanh nghiệp thường đối mặt với các tình trạng: <br>
                 <span>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Máy tính nằm phân tán trong doanh nghiệp<br>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Không phát hiện được các hành vi bất thường trên máy tính<br>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Khó khăn trong việc tuân thủ các chính sách ATTT<br><br>
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Máy tính nằm phân tán trong doanh nghiệp<br>
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Không phát hiện được các hành vi bất thường trên máy tính<br>
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Khó khăn trong việc tuân thủ các chính sách ATTT<br><br>
                 </span>
                 Cách để biết được dữ liệu doanh nghiệp bạn đang trong vùng an toàn là giám sát mọi hành vi dẫn đến nguy cơ mất an toàn an ninh thông tin tại các máy tính trạm hay endpoint 24/7. 
                 Dịch vụ Giám sát an toàn thông tin và phản ứng sự cố FPT. EagleEye MDR là đồng minh đắc lực giúp Doanh nghiệp giám sát ATTT và chống lại các cuộc tấn công có chủ đích.
@@ -65,31 +67,32 @@
                 economically and politically motivated. The current types of malware can bypass enterprise protection systems, hijack the user's computer and perform the
                 escalation attack. In data security, businesses often face the following conditions: <br>
                 <span>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Computers are scattered in the business<br>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Unusual computer behavior is not detected<br>
-                    <i></i>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty in compliance with food safety policies<br><br> <!-- Double check this one -->
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Computers are scattered in the business<br>
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unusual computer behavior is not detected<br>
+                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty in compliance with food safety policies<br><br> <!-- Double check this one -->
                 </span>
                 The way to know if your business data is in a safe zone is to monitor all behaviors that lead to the risk of information insecurity at workstations or
                 endpoints 24/7. Information security monitoring service and FPT incident response. EagleEye MDR is a powerful ally to help businesses monitor security
                 and protect against targeted attacks.
             </span>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding: 20px;">
             <img src="images/section2.png" alt="" class="side-img" style="width: 100%; height: 100%;">
         </div>
     </div>
     <!-- end section 2 -->
 
+
     <!-- section 3 -->
-    <div class="container-fluid" style="border: solid black 1px;">
-        <div class="row" style="border: solid black 1px;">
+    <div class="section container-fluid" id="section3">
+        <div class="row">
             <h1>
                 <span lang="vi">FPT.EagleEye MDR – giám sát, phát hiện nguy cơ an ninh dữ liệu, cảnh báo trong 10 phút</span>
                 <span lang="en">FPT.EagleEye MDR – monitoring, data security risk detection, 10-minute warning</span>
             </h1>
         </div>
-        <div class="row" style="border: solid black 1px;">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-4">
                 <span lang="vi">
                     Giải pháp giám sát an toàn thông tin và phản ứng sự cố bảo 
                     mật tự động theo phương thức dịch vụ ứng dụng phần mềm (SaaS) đầu tiên tại Việt Nam giúp phát hiện nguy cơ tấn công mạng 
@@ -109,9 +112,9 @@
                     <br>
                 </span>
             </div>
-            <div class="col-md-6 container">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="feature_content col-md-3" style="border: solid black 1px;">
+                    <div class="feature_content col-md-4" style="border: solid black 1px;">
                         <img src="images/Artboard 6.svg" alt="" class="steps-img3">
         
                         <div>
@@ -130,7 +133,7 @@
                             We control general security across the entire system even when you are sleeping.
                         </span>
                     </div>
-                    <div class="feature_content col-md-3" style="border: solid black 1px;">
+                    <div class="feature_content col-md-4" style="border: solid black 1px;">
                         <img src="images/Artboard 6 copy.svg" alt="" class="steps-img3">
         
                         <div>
@@ -150,7 +153,7 @@
                             <br>
                         </div>
                     --> <!-- set the rest to col-md-6 -->
-                    <div class="feature_content col-md-3" style="border: solid black 1px;">
+                    <div class="feature_content col-md-4" style="border: solid black 1px;">
                         <img src="images/Artboard 6 copy 2.svg" alt="" class="steps-img3">
         
                         <div>
@@ -169,9 +172,9 @@
                             and centralized processing can detect unknown malware in the world.
                         </span>
                     </div>
-                    <div class="feature_content col-md-3" style="border: solid black 1px;">
+                    <div class="feature_content col-md-4" style="border: solid black 1px;">
                         <img src="images/Artboard 6 copy 3.svg" alt="" class="steps-img3">
-        
+
                         <div>
                             <span lang="vi">Đo lường hiệu quả</span>
                             <span lang="en">Measure the efficiency</span>
@@ -193,7 +196,7 @@
     <!-- end section 3 -->
 
     <!-- section 4 -->
-    <div class="container-fluid" style="border: solid black 1px; background-color: grey;">
+    <div class="section container-fluid" id="section4">
         <div class="col-md-6">
             <figure class="image-box"><a href="video/Video_MDR 27-05.mp4" class="overlay-link lightbox-image video_" data-caption data-fancybox><i class="fa fa-play video_fa"></i><img src="images/video.png" class="side-img img-responsive" alt></a></figure>
             <div class="video-column image-box">
@@ -211,57 +214,81 @@
                 </span>
             </p>
         </div>
-        <div class="col-md-6 container">
+        <div class="col-md-6">
             <div class="row">
                 <span lang="vi"><h1>Miễn phí 3 tháng sử dụng</h1></span>
                 <span lang="en"><h1>Free for 3 months</h1></span>
             </div>
 
             <div class="row">
-                <div class="col-md-3">
-                    <img src="images/Artboard 6 copy 4.svg" alt="" class="steps-img4">
-                    <span lang="vi">
-                        <div>&nbsp;&nbsp;1 Phút</div> 
-                        &nbsp;&nbsp;&nbsp;Đăng ký
-                    </span>
-                    <span lang="en">
-                        <div>&nbsp;&nbsp;1 minute</div> 
-                        &nbsp;&nbsp;&nbsp;Registration
-                    </span>
+                <div class="col-sm-6">
+                    <div class="row" style="border: solid black 1px; margin: 5px; background-color: gray; color: white;">
+                        <div class="col-sm-4">
+                            <img src="images/Artboard 6 copy 4.svg" alt="" class="steps-img4">
+                        </div>
+                        <div class="col-sm-4">
+                            <span lang="vi">
+                                <div>&nbsp;&nbsp;1 Phút</div> 
+                                &nbsp;&nbsp;&nbsp;Đăng ký
+                            </span>
+                            <span lang="en">
+                                <div>&nbsp;&nbsp;1 minute</div> 
+                                &nbsp;&nbsp;&nbsp;Registration
+                            </span>
+                        </div>  
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="images/Artboard 6 copy 5.svg" alt="" class="steps-img4">
-                    <span lang="vi">
-                        <div>&nbsp;&nbsp;2 giờ</div> 
-                        &nbsp;&nbsp;&nbsp;triển khai
-                    </span>
-                    <span lang="en">
-                        <div>&nbsp;&nbsp;2 hours</div> 
-                        &nbsp;&nbsp;&nbsp;deployment
-                    </span>
+                <div class="col-sm-6">
+                    <div class="row" style="border: solid black 1px; margin: 5px; background-color: gray; color: white;">
+                        <div class="col-sm-4">
+                            <img src="images/Artboard 6 copy 5.svg" alt="" class="steps-img4">
+                        </div>
+                        <div class="col-sm-4">
+                            <span lang="vi">
+                                <div>&nbsp;&nbsp;2 giờ</div> 
+                                &nbsp;&nbsp;&nbsp;triển khai
+                            </span>
+                            <span lang="en">
+                                <div>&nbsp;&nbsp;2 hours</div> 
+                                &nbsp;&nbsp;&nbsp;deployment
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <!--<div class="row"></div>-->
-                <div class="col-md-3">
-                    <img src="images/Artboard 6 copy 6.svg" alt="" class="steps-img4">
-                    <span lang="vi">
-                        <div>&nbsp;&nbsp;10 Phút</div> 
-                        &nbsp;&nbsp;&nbsp;Cảnh báo trước
-                    </span>
-                    <span lang="en">
-                        <div>&nbsp;&nbsp;10 Minutes</div> 
-                        &nbsp;&nbsp;&nbsp;Advance Warning
-                    </span>
+                <div class="row"></div>
+                <div class="col-sm-6">
+                    <div class="row" style="border: solid black 1px; margin: 5px; background-color: gray; color: white;">
+                        <div class="col-sm-4">
+                            <img src="images/Artboard 6 copy 6.svg" alt="" class="steps-img4">
+                        </div>
+                        <div class="col-sm-4">
+                            <span lang="vi">
+                                <div>&nbsp;&nbsp;10 Phút</div> 
+                                &nbsp;&nbsp;&nbsp;Cảnh báo trước
+                            </span>
+                            <span lang="en">
+                                <div>&nbsp;&nbsp;10 Minutes</div> 
+                                &nbsp;&nbsp;&nbsp;Advance Warning
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <img src="images/Artboard 6 copy 7.svg" alt="" class="steps-img4">
-                    <span lang="vi">
-                        <div>&nbsp;&nbsp;8x5</div> 
-                        &nbsp;&nbsp;&nbsp;Hỗ trợ đa kênh
-                    </span>
-                    <span lang="en">
-                        <div>&nbsp;&nbsp;8x5</div> 
-                        &nbsp;&nbsp;&nbsp;Multi-channel support
-                    </span>
+                <div class="col-sm-6">
+                    <div class="row" style="border: solid black 1px; margin: 5px; background-color: gray; color: white;">
+                        <div class="col-sm-4">
+                            <img src="images/Artboard 6 copy 7.svg" alt="" class="steps-img4">
+                        </div>
+                        <div class="col-sm-4">
+                            <span lang="vi">
+                                <div>&nbsp;&nbsp;8x5</div> 
+                                &nbsp;&nbsp;&nbsp;Hỗ trợ đa kênh
+                            </span>
+                            <span lang="en">
+                                <div>&nbsp;&nbsp;8x5</div> 
+                                &nbsp;&nbsp;&nbsp;Multi-channel support
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,7 +296,7 @@
     <!-- end section 4 -->
 
     <!-- section 5 -->
-    <div class="container-fluid" style="border: solid black 1px;">
+    <div class="section container-fluid" id="section5">
         <div class="row">
             <div class="col-md-6">
                 <span lang="vi"><h1>Cam kết dịch vụ của FPT</h1></span>
@@ -310,14 +337,14 @@
                 </span>
             </div>
             <div class="col-md-6">
-                <img src="images/500x500.png" alt="" class="side-img">
+                <img src="images/500x500.png" alt="" class="side-img" style="margin: 20px; height: 50%; width: 50%;">
             </div>
         </div>
     </div>
     <!-- end section 5 -->
 
     <!-- section 6 -->
-    <div class="container-fluid" style="border: solid black 1px;">
+    <div class="section container-fluid" id="section6">
         <div class="row">
             <h1>
                 <span lang="vi">Ba bước đăng ký</span>
@@ -397,7 +424,7 @@
     <!-- end section 6 -->
 
     <!-- section 7 -->
-    <div class="container-fluid" style="border: solid black 1px;">
+    <div class="section container-fluid" id="section7">
         <div class="row">
             <h1>
                 <span lang="vi">FPT.EagleEye - đồng minh bảo mật cùng doanh nghiệp</span>
@@ -460,7 +487,7 @@
     <!-- end section 7 -->
 
     <!-- section 8 -->
-    <div class="container-fluid" style="border: solid black 1px;">
+    <div class="section container-fluid" id="section8">
         <div class="row">
             <div class="col-md-12">
                 <hr />
@@ -470,32 +497,32 @@
                 </h1>
             </div>
         </div>
-        <div class="row" style="border: solid black 1px;">
+        <div class="row" style="border: solid black 1px; margin: 10px;">
             <p>Entire line of images scrolling here</p>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Thành viên Liên minh Phòng chống Tấn công Mạng</span>
                     <span lang="en">Member of the Cyber ​​Attack Prevention Coalition</span>
                     <br>
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Hơn 20 năm triển khai bảo vệ an toàn, an ninh thông tin</span>
                     <span lang="en">More than 20 years of implementing information safety and security protection</span>
                     <br>
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Top chứng chỉ bảo mật quốc tế chuyên sâu</span>
                     <span lang="en">Top in-depth international security certificate</span>
                     <br>
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Đạt Giải Sao Khuê 2018 lĩnh vực An toàn thông tin</span>
                     <span lang="en">Awarded Sao Khue Award 2018 in Information Security</span>
                     <br>
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Đạt Giải Chuyển đổi số Việt Nam 2019</span>
                     <span lang="en">Won the Vietnam Digital Transformation Award 2019</span>
                     <br>
-                <i></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="fa fa-star green"></i>&nbsp;&nbsp;&nbsp;&nbsp;
                     <span lang="vi">Đạt giải Sản phẩm ATTT mới xuất sắc và Dịch vụ ATTT tiêu biểu 2019</span>
                     <span lang="en">Awarded Excellent New Safety Product and Target Security Service schedule 2019</span>
                     <br>
@@ -507,7 +534,7 @@
     </div>
     <!-- end section 8 -->
 
-    <footer style="border: solid black 1px;">
+    <footer style="border: solid black 1px;" id="footer-id">
         <div style="overflow: hidden;">
             <div style="float: left;">
                 <div><p>image goes here</p></div>

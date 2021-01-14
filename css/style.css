@@ -5,3 +5,22 @@ h1 {
 body { 
     padding-top: 50px; 
 }
+
+.section{
+    border: solid black 1px;
+    margin: 10px;
+}
+.steps-img4{
+    height: 100px;
+    width: 100px;
+}
+
+.steps-img3{
+    height: 80px;
+    width: 80px;
+}
+.feature_content{
+    margin: 10px;
+    width: 22%;
+    height: 450px;
+}
