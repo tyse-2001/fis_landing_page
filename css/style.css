@@ -1,9 +1,14 @@
 h1 {
-    color: blue;
+    color: rgb(0, 81, 255);
 }
 
 body { 
     padding-top: 50px; 
+}
+.twologo{
+    max-width: 30vw;
+    padding-left: 10vw;
+    /*position: absolute;*/
 }
 
 .section{
@@ -23,4 +28,11 @@ body {
     margin: 10px;
     width: 22%;
     height: 450px;
+}
+
+.s4-container {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(57, 136, 255);
+    color: white;
 }
