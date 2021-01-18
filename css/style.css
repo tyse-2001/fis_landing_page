@@ -1,41 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
 h1 {
     color: rgb(0, 81, 255);
 }
-
 body { 
     padding-top: 50px; 
+    font-size: 18px;
 }
 .twologo{
     max-width: 30vw;
     padding-left: 10vw;
     /*position: absolute;*/
 }
-
 .section{
     border: solid black 1px;
     margin: 10px;
 }
-.steps-img4{
-    height: 100px;
-    width: 100px;
+.flag-button{
+    width: 50px;
+    height: 50px;
 }
 
-.steps-img3{
-    height: 80px;
-    width: 80px;
-}
+/* section 2 */
+/* end section 2 */
+
+/* section 3 */
 .feature_content{
     margin: 10px;
     width: 22%;
     height: 450px;
+    font-size: 14px;
 }
+.steps-img3{
+    height: 80px;
+    width: 80px;
+}
+/* end section 3 */
 
+/* section 4 */
 .s4-container {
     margin: 5px;
     padding: 10px;
     background-color: rgb(57, 136, 255);
     color: white;
 }
+.steps-img4{
+    height: 100px;
+    width: 100px;
+}
+/* end section 4 */
+
+/* section 5 */
+.steps-img{
+    height: 100%;
+    width: 100%;
+}
+/* end section 5 */
+
+/* section 6 */
+/* end section 6 */
+
+/* section 7 */
+/* end section 7 */
+
+/* section 8 */
+/* end section 8 */
+
 
 footer {
     color: white;

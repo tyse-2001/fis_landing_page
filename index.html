@@ -13,8 +13,11 @@
 </head>
 <nav class="navbar navbar-fixed-top navbar-default"> <!-- requires at least 50 px padding of the body-->
     <div class="container-fluid">
-        <ul class="nav navbar-nav"> <!-- add jumping anchor link -->
-            <li><button id="switch-lang" class="btn btn-outline-dark">Switch Language</button></li>
+        <ul class="nav navbar-nav">
+            <li id="switch-lang" style="margin-right: 20px;">
+                <span lang="vi"><img src="images/Flag_of_the_United_Kingdom.svg" alt="" class="flag-button"></span>
+                <span lang="en"><img src="images/Flag_of_Vietnam.svg" alt="" class="flag-button"></span>
+            </li>
             <li><a href="#section2"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
             <li><a href="#section3"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
             <li><a href="#section4"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
@@ -24,9 +27,8 @@
     </div>
 </nav>
 <body>
-    <div style="margin: 10px; background-color: rgb(57, 136, 255); color: white;">
-        <img src="images/twologo.png" alt="" class="twologo">
-        <div class="container-fluid" style="margin: 10px; background-color: rgb(57, 136, 255); color: white;">
+    <div class="container-fluid" style="margin: 10px; background-color: rgb(57, 136, 255); color: white;">
+        <div class="col-md-6">
             <div class="row">
                 <h1 style="color: white;">FPT.EagleEye MDR</h1>
             </div>
@@ -45,12 +47,6 @@
             </div>
             <br>
             <div class="row">
-                <!--
-                <a>
-                    <span lang="vi">Đăng ký miễn phí</span>
-                    <span lang="en">Free sign up</span>
-                </a>
-                -->
                 <button class="btn btn-outline-dark" style="color: black;">
                     <span lang="vi">Đăng ký miễn phí</span>
                     <span lang="en">Free sign up</span>
@@ -58,6 +54,7 @@
             </div>
             <br>
         </div>
+        <div class="col-md-6"><img src="images/twologo.png" alt="" class="twologo"></div>
     </div>
 
 
@@ -68,31 +65,41 @@
                 <span lang="vi">Làm sao biết được dữ liệu doanh nghiệp bạn đang an toàn?</span>
                 <span lang="en">How do you know if your business data is safe?</span>
             </h1>
-            <span lang="vi">
-                Các cuộc tấn công mạng ngày càng tinh vi, không chỉ là những hành vi xâm nhập hệ thống, khai thác thông tin, trục lợi vì mục đích cá nhân mà còn là những cuộc tấn công có tổ chức, 
-                có động cơ kinh tế và chính trị. Các loại mã độc hiện nay có thể vượt qua các hệ thống bảo vệ của  doanh nghiệp, 
-                chiếm quyền điều khiển máy tính người dùng và thực hiện tấn công leo thang. Trong bảo mật dữ liệu, Doanh nghiệp thường đối mặt với các tình trạng: <br>
-                <span>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Máy tính nằm phân tán trong doanh nghiệp<br>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Không phát hiện được các hành vi bất thường trên máy tính<br>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Khó khăn trong việc tuân thủ các chính sách ATTT<br><br>
+            <span>
+                <span lang="vi">
+                    Các cuộc tấn công mạng ngày càng tinh vi, không chỉ là những hành vi xâm nhập hệ thống, khai thác thông tin, trục lợi vì mục đích cá nhân mà còn là những cuộc tấn công có tổ chức, 
+                    có động cơ kinh tế và chính trị. Các loại mã độc hiện nay có thể vượt qua các hệ thống bảo vệ của  doanh nghiệp, 
+                    chiếm quyền điều khiển máy tính người dùng và thực hiện tấn công leo thang. Trong bảo mật dữ liệu, Doanh nghiệp thường đối mặt với các tình trạng:
+                    <br>
                 </span>
-                Cách để biết được dữ liệu doanh nghiệp bạn đang trong vùng an toàn là giám sát mọi hành vi dẫn đến nguy cơ mất an toàn an ninh thông tin tại các máy tính trạm hay endpoint 24/7. 
-                Dịch vụ Giám sát an toàn thông tin và phản ứng sự cố FPT. EagleEye MDR là đồng minh đắc lực giúp Doanh nghiệp giám sát ATTT và chống lại các cuộc tấn công có chủ đích.
-            </span>
-            <span lang="en"> 
-                Cyber ​​attacks are becoming more and more sophisticated, not only are system intrusion, information exploitation, self-seeking but also organized attacks,
-                economically and politically motivated. The current types of malware can bypass enterprise protection systems, hijack the user's computer and perform the
-                escalation attack. In data security, businesses often face the following conditions: <br>
-                <span>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Computers are scattered in the business<br>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Unusual computer behavior is not detected<br>
-                    <i class="fa fa-caret-right"></i>&nbsp;&nbsp;&nbsp;&nbsp;Difficulty in compliance with food safety policies<br><br> <!-- Double check this one -->
+                <span lang="en">
+                    Cyber ​​attacks are becoming more and more sophisticated, not only are system intrusion, information exploitation, self-seeking but also organized attacks,
+                    economically and politically motivated. The current types of malware can bypass enterprise protection systems, hijack the user's computer and perform the
+                    escalation attack. In data security, businesses often face the following conditions:
+                    <br>
                 </span>
-                The way to know if your business data is in a safe zone is to monitor all behaviors that lead to the risk of information insecurity at workstations or
-                endpoints 24/7. Information security monitoring service and FPT incident response. EagleEye MDR is a powerful ally to help businesses monitor security
-                and protect against targeted attacks.
+                <span>
+                    <i class="fa fa-caret-right "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span lang="vi">Máy tính nằm phân tán trong doanh nghiệp</span>
+                        <span lang="en">Computers are scattered in the business</span><br>
+                    <i class="fa fa-caret-right "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span lang="vi">Không phát hiện được các hành vi bất thường trên máy tính</span>
+                        <span lang="en">Unusual computer behavior is not detected</span><br>
+                    <i class="fa fa-caret-right "></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span lang="vi">Khó khăn trong việc tuân thủ các chính sách ATTT</span>
+                        <span lang="en">Difficulty in compliance with food safety policies</span><br><br> <!-- Double check this one -->
+                </span>
+                <span lang="vi">
+                    Cách để biết được dữ liệu doanh nghiệp bạn đang trong vùng an toàn là giám sát mọi hành vi dẫn đến nguy cơ mất an toàn an ninh thông tin tại các máy tính trạm hay endpoint 24/7. 
+                    Dịch vụ Giám sát an toàn thông tin và phản ứng sự cố FPT.EagleEye MDR là đồng minh đắc lực giúp Doanh nghiệp giám sát ATTT và chống lại các cuộc tấn công có chủ đích.
+                </span>
+                <span lang="en">
+                    The way to know if your business data is in a safe zone is to monitor all behaviors that lead to the risk of information insecurity at workstations or
+                    endpoints 24/7. Information security monitoring service and FPT incident response. EagleEye MDR is a powerful ally to help businesses monitor security
+                    and protect against targeted attacks.
+                </span>
             </span>
+
         </div>
         <div class="col-md-4" style="padding: 20px;">
             <img src="images/section2.png" alt="" class="side-img" style="width: 100%; height: 100%;">
@@ -114,21 +121,24 @@
                 <span lang="vi">
                     Giải pháp giám sát an toàn thông tin và phản ứng sự cố bảo 
                     mật tự động theo phương thức dịch vụ ứng dụng phần mềm (SaaS) đầu tiên tại Việt Nam giúp phát hiện nguy cơ tấn công mạng 
-                    và đưa ra cảnh báo chỉ trong vòng 10 phút, tối ưu kiểm soát máy trạm 24/7.<br><br>
-                    <h1>Tính năng nổi bật</h1>
-                    <p>image element goes here</p>
-                    <a><span>Dùng miễn phí</span></a>
-                    <br>
+                    và đưa ra cảnh báo chỉ trong vòng 10 phút, tối ưu kiểm soát máy trạm 24/7.
                 </span>
-                <span lang="en">   
+                <span lang="en">
                     Security monitoring solutions and security incident response
                     Automated security by the first software application service (SaaS) method in Vietnam to help detect the risk of cyber attacks
-                    and give alerts within 10 minutes, optimally controlled 24/7 workstation.<br><br>
-                    <h1>Salient features</h1>
-                    <p>image element goes here</p>
-                    <a><span>Get free</span></a>
-                    <br>
+                    and give alerts within 10 minutes, optimally controlled 24/7 workstation.
                 </span>
+                <br><br>
+                <h1>
+                    <span lang="vi">Tính năng nổi bật</span>
+                    <span lang="en"> Salient features</span>
+                </h1>
+                <p>image element goes here</p>
+                <button class="btn btn-outline-dark" style="color: black;">
+                    <span lang="vi">Dùng miễn phí</span>
+                    <span lang="en">Get free</span>
+                </button>
+                <br>
             </div>
             <div class="col-md-8">
                 <div class="row">
@@ -529,14 +539,13 @@
     <!-- end section 8 -->
 
     <footer style="background-color: rgb(57, 136, 255)" id="footer-id">
-        <div style="overflow: hidden;">
-            <div style="float: left;">
-                <div><p>image goes here</p></div>
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <div><img src="images/twologo.png" alt="" class="twologo"></div>
                 <h2>
                     <span lang="vi">Trung Tâm An Ninh Mạng FPT</span>
                     <span lang="en">FPT Network Security Center</span>
                 </h2>
-                <br>
                 <br>
                 <p>
                     <i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -556,10 +565,8 @@
     
                 <a><span lang="vi">Tải Brochure</span><span lang="en">Download Brochure</span></a>
             </div>
-            <div style="float: left;"><p>Form goes here</p></div>
+            <div class="col-md-6"><p>Form goes here</p></div>
         </div>
-
-
     </footer>
     <script src="js/lang_toggle.js"></script>
 </body>
