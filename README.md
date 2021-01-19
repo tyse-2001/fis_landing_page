@@ -10,8 +10,14 @@ Repository for landing page
 - Translate the Vietnamese to English
 - Implemented function to toggle between langauges
 
+### Week 2:
+- Implemented video in modal
+- Added smooth scrolling
+- Added brochure to the site
+
 ## Tasks to be done:
 - Improve overall look of the site (In progress)
-- Learn more on how to use bootstrap and implement it
 - Double check the translations
-- Implement the forms into the site proper
+- (New) Implement the forms into the site proper (Use google app sheets)
+- (New) Referrence templates and take inspiration from them for the designs
+- (New) Fix overlay of play button over video modal
