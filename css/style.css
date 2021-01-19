@@ -8,6 +8,46 @@ body {
     padding-top: 50px; 
     font-size: 18px;
 }
+
+/* Tooltips */
+.tooltip-container{
+    position:relative;
+}
+.tooltiptext{
+    display:none;
+    position:absolute; 
+    z-index:1;
+    border:1px;
+    background-color:white;
+    border-style:solid;
+    border-width:1px;
+    border-color:dodgerblue;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+    padding:8px;
+    color:black;
+    top:30px; 
+    left:0px;
+    width: 100px;
+}
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 25%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent dodgerblue transparent;
+}
+
+.tooltip-container:hover span.tooltiptext{
+    display:block;
+}
+/* End Tooltips */
+
+
 .twologo{
     max-width: 30vw;
     padding-left: 10vw;
