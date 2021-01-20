@@ -14,10 +14,12 @@ Repository for landing page
 - Implemented video in modal
 - Added smooth scrolling
 - Added brochure to the site
+- Implemented the forms into the site proper using google app sheets
 
 ## Tasks to be done:
 - Improve overall look of the site (In progress)
-- Double check the translations
-- (New) Implement the forms into the site proper (Use google app sheets)
-- (New) Referrence templates and take inspiration from them for the designs
-- (New) Fix overlay of play button over video modal
+- Double check the translations (In progress)
+- Referrence templates and take inspiration from them for the designs (In progress)
+- Fix overlay of play button over video modal
+- Add image scrolling to section 8, review Owl Carousel
+- Add action after form successfully submits the information

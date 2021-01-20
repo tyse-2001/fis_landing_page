@@ -257,27 +257,22 @@
                 </div>
                 <script>
                     function openTab(evt, cityName) {
-                        // Declare all variables
                         var i, tabcontent, tablinks;
         
-                        // Get all elements with class="tabcontent" and hide them
                         tabcontent = document.getElementsByClassName("tabcontent");
                         for (i = 0; i < tabcontent.length; i++) {
                             tabcontent[i].style.display = "none";
                         }
         
-                        // Get all elements with class="tablinks" and remove the class "active"
                         tablinks = document.getElementsByClassName("tablinks");
                         for (i = 0; i < tablinks.length; i++) {
                             tablinks[i].className = tablinks[i].className.replace(" active", "");
                         }
         
-                        // Show the current tab, and add an "active" class to the link that opened the tab
                         document.getElementById(cityName).style.display = "block";
                         evt.currentTarget.className += " active";
                         }
                     
-                        // Get the element with id="defaultOpen" and click on it
                         document.getElementById("defaultOpen").click();
                 </script>
             </div>
@@ -584,7 +579,33 @@
             </div>
         </div>
         <div class="row" style="border: solid black 1px; margin: 10px;">
-            <p>Entire line of images scrolling here</p>
+            <div class="col-md-2">
+                <img src="images/khachhang/vietlott.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard2.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard3.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard4.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard5.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard6.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/Artboard7.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/logo-tpbank.png" alt="" class="side-img">
+            </div>
+            <div class="col-md-2">
+                <img src="images/khachhang/msb.png" alt="" class="side-img">
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6">
