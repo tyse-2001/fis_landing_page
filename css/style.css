@@ -66,6 +66,9 @@ body {
     height: 50px;
 }
 
+/* Header */
+/* end Header */
+
 /* section 2 */
 /* end section 2 */
 
@@ -141,6 +144,7 @@ body {
     margin: 5px;
     padding: 10px;
     background-color: rgb(57, 136, 255);
+    border-radius: 10px;
     color: white;
 }
 .steps-img4{

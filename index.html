@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <title>Landing page</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,11 +27,13 @@
                     <span class="tooltiptext">Change language to Vietnamese</span>
                 </span>
             </li>
-            <li><a href="#section2"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
-            <li><a href="#section3"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
-            <li><a href="#section4"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
-            <li><a href="#section8"><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
-            <li><a href="#footer-id"><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav" style="float: right;">
+            <li style="margin-left: 10px; margin-right: 10px;"><a href="#section2"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
+            <li style="margin-left: 10px; margin-right: 10px;"><a href="#section3"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
+            <li style="margin-left: 10px; margin-right: 10px;"><a href="#section4"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
+            <li style="margin-left: 10px; margin-right: 10px;"><a href="#section8"><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
+            <li style="margin-left: 10px; margin-right: 10px;"><a href="#footer-id"><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
         </ul>
     </div>
 </nav>
@@ -54,7 +58,7 @@
             </div>
             <br>
             <div class="row">
-                <button class="btn btn-outline-dark" style="color: black;">
+                <button class="btn btn-outline-dark" style="color: black;" type="button" data-toggle="modal" data-target="#form-modal">
                     <span lang="vi">Đăng ký miễn phí</span>
                     <span lang="en">Free sign up</span>
                 </button>
@@ -136,7 +140,7 @@
                 </span>
                 <br><br>
 
-                <button class="btn btn-outline-dark" style="color: black; background-color: white;">
+                <button class="btn btn-outline-dark" style="color: black; background-color: white;" type="button" data-toggle="modal" data-target="#form-modal">
                     <span lang="vi">Dùng miễn phí</span>
                     <span lang="en">Get free</span>
                 </button>
@@ -255,26 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    function openTab(evt, cityName) {
-                        var i, tabcontent, tablinks;
-        
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-        
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-        
-                        document.getElementById(cityName).style.display = "block";
-                        evt.currentTarget.className += " active";
-                        }
-                    
-                        document.getElementById("defaultOpen").click();
-                </script>
+                <script src="js/tab.js"></script>
             </div>
         </div>
         
@@ -284,15 +269,6 @@
     <!-- section 4 -->
     <div class="section container-fluid" id="section4">
         <div class="col-md-6" style="margin-bottom: 10px;">
-            <p class="video_caption">
-                <span lang="vi">
-                    Giới thiệu Dịch vụ Giám sát an toàn thông tin và Phản ứng sự cố <br> FPT.EagleEye MDR
-                </span>
-                <span lang="en">
-                    Introduction of Information Security Surveillance and Incident Response Service <br> FPT.EagleEye MDR
-                </span>
-            </p>
-
             <!--Modal: Name-->
             <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -307,17 +283,14 @@
                                 </video>
                             </div>
                         </div>
-                        <!--Body-->
+
                         <!--Footer-->
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
                         </div>
-                        <!--Footer-->
                     </div>
-                    <!--Content-->
                 </div>
             </div>
-            <!--Modal: Name-->
             <a>
                 <img class="img-fluid z-depth-1" src="images/video.png" alt="video"
                 data-toggle="modal" data-target="#modal1" width="100%">
@@ -327,9 +300,17 @@
                 </div> 
                 -->
             </a>
+            <p class="video_caption">
+                <span lang="vi">
+                    Giới thiệu Dịch vụ Giám sát an toàn thông tin và Phản ứng sự cố <br> FPT.EagleEye MDR
+                </span>
+                <span lang="en">
+                    Introduction of Information Security Surveillance and Incident Response Service <br> FPT.EagleEye MDR
+                </span>
+            </p>
         </div>
         <div class="col-md-6">
-            <div class="row">
+            <div class="row" style="text-align: center;">
                 <span lang="vi"><h1>Miễn phí 3 tháng sử dụng</h1></span>
                 <span lang="en"><h1>Free for 3 months</h1></span>
             </div>
@@ -495,7 +476,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-outline-dark btn-lg" style="margin: 20px;">
+                <button class="btn btn-outline-dark btn-lg" style="margin: 20px;" type="button" data-toggle="modal" data-target="#form-modal">
                     <span lang="vi">Dùngmiễn phí</span>
                     <span lang="en">Get free</span>
                 </button>
@@ -675,110 +656,202 @@
             <div class="col-md-5" style="color: black;background-color: white; border-radius: 5px; margin: 5px;">
                 <form id="contact-form" method="GET" action="#">
                     <h2 class="steps-text">
-                      <div class="steps-text-primari" style="color: black;text-align: center;font-weight: bold;">
-                        <span lang="vi">
-                            Vì an toàn thông tin là tiên quyết <br>
-                            FPT.EagleEye ở bên bạn.
-                        </span>
-                        <span lang="en">
-                            Because information security is a prerequisite <br>
-                            FPT.EagleEye is with you.
-                        </span>
-                    </div>
+                        <div class="steps-text-primari" style="color: black;text-align: center;font-weight: bold;">
+                            <span lang="vi">
+                                Vì an toàn thông tin là tiên quyết <br>
+                                FPT.EagleEye ở bên bạn.
+                            </span>
+                            <span lang="en">
+                                Because information security is a prerequisite <br>
+                                FPT.EagleEye is with you.
+                            </span>
+                        </div>
                     </h2>
         
                     <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="" for="fname" style="display: block;">
-                            <span lang="vi">Họ</span>
-                            <span lang="en">Surname</span>
-                            <p style=" display:inline;color:red">*</p></label>
-                        <input type="text" id="fname" name="Ho" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="" for="lname" style="display: block;">
-                            <span lang="vi">Tên</span><span lang="en">Name</span>
-                            <p style="display:inline;color:red">*</p>
-                        </label>
-                              <input type="text" id="lname" name="Ten" class="form-control">
-                      </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="" for="fname" style="display: block;">
+                                <span lang="vi">Họ</span>
+                                <span lang="en">Surname</span>
+                                <p style=" display:inline;color:red">*</p></label>
+                            <input type="text" id="fname" name="Ho" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="" for="lname" style="display: block;">
+                                <span lang="vi">Tên</span><span lang="en">Name</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                                <input type="text" id="lname" name="Ten" class="form-control">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="" for="email" style="display: block;">
+                                Email
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                            <input type="email" id="email" name="Email" class="form-control">
+                        </div>
                     </div>
         
                     <div class="row form-group">
                       <div class="col-md-12">
-                        <label class="" for="email" style="display: block;">
-                            Email
-                            <p style="display:inline;color:red">*</p>
-                        </label>
-                        <input type="email" id="email" name="Email" class="form-control">
-                      </div>
+                            <label class="" for="subject" style="display: block;">
+                                <span lang="vi">Số điện thoại</span>
+                                <span lang="en">Phone number</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                            <input type="subject" id="subject" name="Sodienthoai" class="form-control">
+                        </div>
                     </div>
         
                     <div class="row form-group">
-        
-                      <div class="col-md-12">
-                        <label class="" for="subject" style="display: block;">
-                            <span lang="vi">Số điện thoại</span>
-                            <span lang="en">Phone number</span>
-                            <p style="display:inline;color:red">*</p>
-                        </label>
-                        <input type="subject" id="subject" name="Sodienthoai" class="form-control">
-                      </div>
-                    </div>
-        
-                    <div class="row form-group">
-        
-                      <div class="col-md-12">
-                        <label class="" for="subject" style="display: block;">
-                            <span lang="vi">Tên tổ chức</span>
-                            <span lang="en">Organization Name</span>
-                            <p style="display:inline;color:red">*</p</label>
+                        <div class="col-md-12">
+                            <label class="" for="subject" style="display: block;">
+                                <span lang="vi">Tên tổ chức</span>
+                                <span lang="en">Organization Name</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
                             <input type="subject" id="subject" name="Donvi_Congtac" class="form-control">
-                      </div>
+                        </div>
                     </div>
         
                     <div class="row form-group">
-                      <div class="col-md-12">
-                        <label class="" for="message">
-                            <span lang="vi">
-                                Số máy tính cần giám sát (tối đa 50)
-                            </span>
-                            <span lang="en">
-                                Number of computers to be monitored (maximum 50)
-                            </span>
-                        </label>
-                        <input type="number" id="quantity" name="Endpoint" class="form-control" min="1" max="50">
-                      </div>
+                        <div class="col-md-12">
+                            <label class="" for="message">
+                                <span lang="vi">
+                                    Số máy tính cần giám sát (tối đa 50)
+                                </span>
+                                <span lang="en">
+                                    Number of computers to be monitored (maximum 50)
+                                </span>
+                            </label>
+                            <input type="number" id="quantity" name="Endpoint" class="form-control" min="1" max="50">
+                        </div>
                     </div>
         
                     <div class="row form-group">
-                      <div class="col-md-12" style="margin-top: 20px;">
-                        <br>
-                        <button type="submit" id="submit-form" class="btn btn-custom py-2 px-4 text-white">
-                            <span lang="vi">Đăng ký</span>
-                            <span lang="en">Registration</span>
-                        </button>
-                      </div>
+                        <div class="col-md-12" style="margin-top: 20px;">
+                            <br>
+                            <button type="submit" id="submit-form" class="btn btn-custom py-2 px-4 text-white">
+                                <span lang="vi">Đăng ký</span>
+                                <span lang="en">Registration</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
-                <script>   
-                    var $form = $('form#contact-form'),
-                        url = 'https://script.google.com/macros/s/AKfycbwvDoDs4FJ65sE_Uh_jWAVe7DKI9Gg_vKsnhfTuPcoVexUBd8hu/exec'
-
-                    $('#submit-form').on('click', function(e) {
-                    e.preventDefault();
-                    var jqxhr = $.ajax({
-                        url: url,
-                        method: "GET",
-                        dataType: "json",
-                        data: $form.serializeObject()
-                    }).success(
-                        // do something
-                    );
-                    })
-                </script>
             </div>
         </div>
     </footer>
-    <script src="js/lang_toggle.js"></script>
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Body-->
+                <form id="contact-form-2" method="GET" action="#" style="margin: 20px;">
+                    <h2 class="steps-text">
+                        <div class="steps-text-primari" style="color: black;text-align: center;font-weight: bold;">
+                            <span lang="vi">
+                                Vì an toàn thông tin là tiên quyết <br>
+                                FPT.EagleEye ở bên bạn.
+                            </span>
+                            <span lang="en">
+                                Because information security is a prerequisite <br>
+                                FPT.EagleEye is with you.
+                            </span>
+                        </div>
+                    </h2>
+        
+                    <div class="row form-group">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="" for="fname" style="display: block;">
+                                <span lang="vi">Họ</span>
+                                <span lang="en">Surname</span>
+                                <p style=" display:inline;color:red">*</p></label>
+                            <input type="text" id="fname" name="Ho" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="" for="lname" style="display: block;">
+                                <span lang="vi">Tên</span><span lang="en">Name</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                                <input type="text" id="lname" name="Ten" class="form-control">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="" for="email" style="display: block;">
+                                Email
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                            <input type="email" id="email" name="Email" class="form-control">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                            <label class="" for="subject" style="display: block;">
+                                <span lang="vi">Số điện thoại</span>
+                                <span lang="en">Phone number</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                            <input type="subject" id="subject" name="Sodienthoai" class="form-control">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="" for="subject" style="display: block;">
+                                <span lang="vi">Tên tổ chức</span>
+                                <span lang="en">Organization Name</span>
+                                <p style="display:inline;color:red">*</p>
+                            </label>
+                            <input type="subject" id="subject" name="Donvi_Congtac" class="form-control">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="" for="message">
+                                <span lang="vi">
+                                    Số máy tính cần giám sát (tối đa 50)
+                                </span>
+                                <span lang="en">
+                                    Number of computers to be monitored (maximum 50)
+                                </span>
+                            </label>
+                            <input type="number" id="quantity" name="Endpoint" class="form-control" min="1" max="50">
+                        </div>
+                    </div>
+        
+                    <div class="row form-group">
+                        <div class="col-md-12" style="margin-top: 20px;">
+                            <br>
+                            <button type="submit" id="submit-form-2" class="btn btn-custom py-2 px-4 text-white">
+                                <span lang="vi">Đăng ký</span>
+                                <span lang="en">Registration</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <!--Body-->
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                </div>
+                <!--Footer-->
+            </div>
+            <!--Content-->
+        </div>
+    </div>
+    <!--Modal: Name-->
+    
 </body>
+
+<script src="js/lang_toggle.js"></script>
+<script src="js/form_submit.js"></script>
+<script src="js/form_modal_submit.js"></script>
