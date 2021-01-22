@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <script src="js/jquery.serialize-object.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -127,24 +129,28 @@
             </h1>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <span lang="vi">
-                    Giải pháp giám sát an toàn thông tin và phản ứng sự cố bảo 
-                    mật tự động theo phương thức dịch vụ ứng dụng phần mềm (SaaS) đầu tiên tại Việt Nam giúp phát hiện nguy cơ tấn công mạng 
-                    và đưa ra cảnh báo chỉ trong vòng 10 phút, tối ưu kiểm soát máy trạm 24/7.
-                </span>
-                <span lang="en">
-                    Security monitoring solutions and security incident response
-                    Automated security by the first software application service (SaaS) method in Vietnam to help detect the risk of cyber attacks
-                    and give alerts within 10 minutes, optimally controlled 24/7 workstation.
-                </span>
-                <br><br>
+            <div class="col-md-4" style="margin-top: 50px;">
+                <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                    <span lang="vi">
+                        Giải pháp giám sát an toàn thông tin và phản ứng sự cố bảo 
+                        mật tự động theo phương thức dịch vụ ứng dụng phần mềm (SaaS) đầu tiên tại Việt Nam giúp phát hiện nguy cơ tấn công mạng 
+                        và đưa ra cảnh báo chỉ trong vòng 10 phút, tối ưu kiểm soát máy trạm 24/7.
+                    </span>
+                    <span lang="en">
+                        Security monitoring solutions and security incident response
+                        Automated security by the first software application service (SaaS) method in Vietnam to help detect the risk of cyber attacks
+                        and give alerts within 10 minutes, optimally controlled 24/7 workstation.
+                    </span>
+                    <br><br>
+                </div>
 
-                <button class="btn btn-outline-dark" style="color: black; background-color: white;" type="button" data-toggle="modal" data-target="#form-modal">
-                    <span lang="vi">Dùng miễn phí</span>
-                    <span lang="en">Get free</span>
-                </button>
-                <br>
+                <div class="row" style="text-align: center;">
+                    <button class="btn btn-outline-dark" style="color: black; background-color: white;"
+                    type="button" data-toggle="modal" data-target="#form-modal">
+                        <span lang="vi">Dùng miễn phí</span>
+                        <span lang="en">Get free</span>
+                    </button>
+                </div>
             </div>
             <div class="col-md-8">
                 <div class="row">
@@ -653,7 +659,7 @@
                     </button>
                 </a>
             </div>
-            <div class="col-md-5" style="color: black;background-color: white; border-radius: 5px; margin: 5px;">
+            <div class="col-md-5" style="color: black; background-color: white; border-radius: 5px; margin: 50px;">
                 <form id="contact-form" method="GET" action="#">
                     <h2 class="steps-text">
                         <div class="steps-text-primari" style="color: black;text-align: center;font-weight: bold;">
@@ -855,3 +861,6 @@
 <script src="js/lang_toggle.js"></script>
 <script src="js/form_submit.js"></script>
 <script src="js/form_modal_submit.js"></script>
+<script>
+    ScrollReveal().reveal('.section');
+</script>

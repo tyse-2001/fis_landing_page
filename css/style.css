@@ -3,6 +3,8 @@ html {
 }
 h1 {
     color: rgb(0, 81, 255);
+    /*text-decoration: underline;
+    text-decoration-color: darkblue;*/
 }
 body { 
     padding-top: 50px; 
@@ -24,7 +26,7 @@ body {
     border-color:dodgerblue;
     border-radius: 6px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     padding:8px;
     color:black;
     top:30px; 
@@ -56,8 +58,6 @@ body {
 .section{
     /* border: solid black 1px; */
     margin: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
