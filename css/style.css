@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 h1 {
-    color: rgb(0, 81, 255);
+    color: #1e67a0;
     /*text-decoration: underline;
     text-decoration-color: darkblue;*/
 }
@@ -10,6 +10,19 @@ body {
     padding-top: 50px; 
     font-size: 18px;
 }
+.twologo{
+    max-width: 30vw;
+    padding-left: 10vw;
+    /*position: absolute;*/
+}
+
+/* Header */
+
+.flag-button{
+    width: 50px;
+    height: 50px;
+}
+
 
 /* Tooltips */
 .tooltip-container{
@@ -33,7 +46,7 @@ body {
     left:0px;
     width: 100px;
 }
-.tooltiptext::after {
+.tooltiptext::after { /* Tooltip arrow */
     content: " ";
     position: absolute;
     bottom: 100%;  /* At the top of the tooltip */
@@ -43,31 +56,20 @@ body {
     border-style: solid;
     border-color: transparent transparent dodgerblue transparent;
 }
-
 .tooltip-container:hover span.tooltiptext{
     display:block;
 }
 /* End Tooltips */
+/* End Header */
 
 
-.twologo{
-    max-width: 30vw;
-    padding-left: 10vw;
-    /*position: absolute;*/
-}
 .section{
     /* border: solid black 1px; */
-    margin: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.flag-button{
-    width: 50px;
-    height: 50px;
+    margin: 10px 0px;
+    padding: 50px 20px;
 }
 
-/* Header */
-/* end Header */
+
 
 /* section 2 */
 /* end section 2 */
@@ -132,6 +134,13 @@ body {
     border-left: none;
     height: 300px;
 }
+.tab-fade-in {
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .tabtext {
     margin-top: 10px;
 }
@@ -143,7 +152,7 @@ body {
 .s4-container {
     margin: 5px;
     padding: 10px;
-    background-color: rgb(57, 136, 255);
+    background-color:#1e67a0;
     border-radius: 10px;
     color: white;
 }
@@ -206,6 +215,9 @@ body {
 /* end section 7 */
 
 /* section 8 */
+.s8-img-cont{
+    width: 100%;
+}
 .side-img{
     max-width: 100%;
     max-height: 100%;
@@ -216,4 +228,6 @@ body {
 
 footer {
     color: white;
+    /* background-color: rgb(57, 136, 255) */
+    background-color: #1e67a0;
 }
