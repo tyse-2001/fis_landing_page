@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <head>
     <title>Landing page</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -251,24 +249,26 @@
                         </div>
                     </div>
                     <div id="tab4" class="tabcontent">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="images/Artboard 6 copy 3.svg" alt="" class="steps-img3">
+                        <div class="tab-fade-in">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="images/Artboard 6 copy 3.svg" alt="" class="steps-img3">
+                                </div>
+                                <div class="col-md-10">
+                                    <span lang="vi">Đo lường hiệu quả</span>
+                                    <span lang="en">Measure the efficiency</span>
+                                </div>
                             </div>
-                            <div class="col-md-10">
-                                <span lang="vi">Đo lường hiệu quả</span>
-                                <span lang="en">Measure the efficiency</span>
+                            <div class="row tabtext">
+                                <span lang="vi">
+                                    Chúng tôi chỉ cho bạn nơi bạn được bảo vệ và đưa ra lời khuyên về cách khắc phục. Thông tin chi tiết sẽ được cập nhật trên cổng
+                                    thông tin có giao diện thân thiện với người dùng và chứng minh sự cải tiến của bạn bằng việc báo cáo toàn bộ các tiến trình.
+                                </span>
+                                <span lang="en">
+                                    We show you where you are protected and give you advice on how to fix it. Details will be updated on the portal
+                                    information has a user-friendly interface and demonstrates your improvement by reporting all progress.
+                                </span>
                             </div>
-                        </div>
-                        <div class="row tabtext">
-                            <span lang="vi">
-                                Chúng tôi chỉ cho bạn nơi bạn được bảo vệ và đưa ra lời khuyên về cách khắc phục. Thông tin chi tiết sẽ được cập nhật trên cổng
-                                thông tin có giao diện thân thiện với người dùng và chứng minh sự cải tiến của bạn bằng việc báo cáo toàn bộ các tiến trình.
-                            </span>
-                            <span lang="en">
-                                We show you where you are protected and give you advice on how to fix it. Details will be updated on the portal
-                                information has a user-friendly interface and demonstrates your improvement by reporting all progress.
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -894,4 +894,40 @@
         autoplayHoverPause: true,
         loop: true,
     })
+</script>
+<script>
+    function checkform(formnumber){
+        var Ho = document.forms[formnumber]["Ho"].value;
+        var Ten = document.forms[formnumber]["Ten"].value;
+        var Email = document.forms[formnumber]["Email"].value;
+        var Sodienthoai = document.forms[formnumber]["Sodienthoai"].value
+        var Donvi_Congtac = document.forms[formnumber]["Donvi_Congtac"].value
+
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (Ho === "" || Ten ===""){
+            alert('Họ và tên không thể để trống')
+            return false
+        }
+        else if(Email === ""){
+            alert('Email không thể để trống')
+            return false
+        }
+        else if(Sodienthoai === ""){
+            alert('Số điện thoại không thể để trống')
+            return false
+        }
+        else if(Donvi_Congtac === ""){
+            alert('Đơn vị công tác không thể để trống')
+            return false
+        }
+
+        if(Email.match(mailformat)){
+            return true;
+        }
+        else{
+            alert("Vui lòng check lại định dạng email của bạn");
+            return false;
+        }
+    }
 </script>

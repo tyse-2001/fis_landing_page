@@ -17,10 +17,13 @@ Repository for landing page
 - Implemented the forms into the site proper using google app sheets
 - Added actions (alert, reload) after form successfully submits the information
 
+### Week 3:
+- Added image scrolling to section 8 using Owl Carousel
+- Removed video modal, replaced with video element
+- Added input check to forms
+
 ## Tasks to be done:
 - Improve overall look of the site (In progress)
 - Double check the translations (In progress)
 - Referrence templates and take inspiration from them for the designs (In progress)
-- Fix overlay of play button over video modal or remove modal altogether and implement video controls
-- Add image scrolling to section 8, review Owl Carousel or other
 - Add in text decorations (if any)
