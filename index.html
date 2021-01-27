@@ -31,12 +31,17 @@
                     </span>
                 </li>
             </ul>
+            <script>
+                function goToByScroll(id){
+                    document.getElementById(id).scrollIntoView(true);
+                }
+            </script>
             <ul class="nav navbar-nav" style="float: right;">
-                <li style="margin-left: 10px; margin-right: 10px;"><a href="#section2"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
-                <li style="margin-left: 10px; margin-right: 10px;"><a href="#section3"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
-                <li style="margin-left: 10px; margin-right: 10px;"><a href="#section4"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
-                <li style="margin-left: 10px; margin-right: 10px;"><a href="#section8"><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
-                <li style="margin-left: 10px; margin-right: 10px;"><a href="#footer-id"><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
+                <li style="margin-left: 10px; margin-right: 10px;"><a onclick="goToByScroll('section2')"><span lang="vi">Thử thách</span><span lang="en">Challenges</span></a></li>
+                <li style="margin-left: 10px; margin-right: 10px;"><a onclick="goToByScroll('section3')"><span lang="vi">Giải pháp</span><span lang="en">Solution</span></a></li>
+                <li style="margin-left: 10px; margin-right: 10px;"><a onclick="goToByScroll('section4')"><span lang="vi">Đăng ký</span><span lang="en">Registration</span></a></li>
+                <li style="margin-left: 10px; margin-right: 10px;"><a onclick="goToByScroll('section8')"><span lang="vi">Khách hàng</span><span lang="en">Customer</span></a></li>
+                <li style="margin-left: 10px; margin-right: 10px;"><a onclick="goToByScroll('footer-id')"><span lang="vi">Liên hệ</span><span lang="en">Contact</span></a></li>
             </ul>
         </div>
     </nav>

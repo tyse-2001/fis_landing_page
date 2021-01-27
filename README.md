@@ -21,6 +21,8 @@ Repository for landing page
 - Added image scrolling to section 8 using Owl Carousel
 - Removed video modal, replaced with video element
 - Added input check to forms
+- Fixed empty space at tabs button using flexbox container
+- Improved the jump to anchor function (url is now unchanged when jumping to part of page)
 
 ## Tasks to be done:
 - Improve overall look of the site (In progress)
