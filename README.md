@@ -27,5 +27,3 @@ Repository for landing page
 ## Tasks to be done:
 - Improve overall look of the site (In progress)
 - Double check the translations (In progress)
-- Referrence templates and take inspiration from them for the designs (In progress)
-- Add in text decorations (if any)
